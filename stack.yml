@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://127.0.0.1:8080
+functions:
+  test-node:
+    lang: node
+    handler: ./test-node
+    image: madadz/test-node:latest
+
