@@ -21,8 +21,6 @@ jobs:
     - name: OpenFaaS build and push
       uses: mrsimpson/action-openfaas-build@0.3.0
       with:
-      # The OpenFaaS function definition file
-         stack-file: stack.yml
       # Your docker username with push authorization
          docker-username: ${{ secrets.d_u }}
       # Your docker password
